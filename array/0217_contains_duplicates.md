@@ -49,5 +49,5 @@ class Solution {
 }
 ```
 ### Complexity Analysis
-- Time complexity: O(N)
-- Space complexity: O(N)
+- Time complexity: O(n)
+- Space complexity: O(n)
