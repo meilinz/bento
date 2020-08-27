@@ -1,1 +1,1 @@
-# leetcode algorithm problems
+# Casting magical spells
