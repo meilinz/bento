@@ -1,1 +1,1 @@
-# leetcode_algorithms
+# leetcode algorithm problems
