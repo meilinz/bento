@@ -31,9 +31,7 @@ class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         nums_set = set(nums)
         ideal_set = set(range(1, len(nums) + 1))
-        
-        missing_set = ideal_set.difference(nums_set)
-        result = list(missing_set)
+        result = list(ideal_set - nums_set)
         
         return result
 ```
