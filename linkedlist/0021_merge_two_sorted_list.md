@@ -2,7 +2,7 @@
 ## Problem Description
 https://leetcode.com/problems/merge-two-sorted-lists/
 
-## Solution 1: Iterative
+## Solution 1: Iteration
 ### Python 3
 ```
 class Solution:
@@ -49,6 +49,28 @@ class Solution {
 
 ```
 
- ### Complexity Analysis
+### Complexity Analysis
  - Time complexity: O(n + m)
  - Space complexity: O(1)
+
+## Solution 2: Recursion
+### Python 3
+ ```
+ class Solution:
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        if l1 is None:
+            return l2
+        elif l2 is None:
+            return l1
+        elif l1.val < l2.val:
+            l1.next = self.mergeTwoLists(l1.next, l2)
+            return l1
+        else:
+            l2.next = self.mergeTwoLists(l1, l2.next)
+            return l2
+
+ ```
+ 
+### Complexity Analysis
+ - Time complexity: O(n + m)
+ - Space complexity: O(n + m)
